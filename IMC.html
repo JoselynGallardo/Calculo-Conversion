@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Mi documento básico</title>
+</head>
+<body>
+  <marquee  behavior="alternate" direction="">
+            <img src="IMC.png"></marquee>
+  <center>Índice de masa corporal</center>
+Indicador confiable de la gordura y se usa para identificar las categorías de peso que pueden llevar a problemas de salud.
+<p>Asociación entre el peso y la talla de una persona. Es un indicador para evaluar el estado nutricional. El IMC constituye la medida poblacional más útil del sobrepeso y la obesidad, pues la forma de calcularlo no varía en función del sexo ni de la edad en la población adulta.
+
+La Organización Mundial de la Salud, ha propuesto una clasificación del estado nutricional dependiendo del IMC de una persona.
+
+La fórmula del IMC es el peso en kilógramos dividido por el cuadrado de la altura en metros (kg/m2). El IMC es una indicación simple de la relación entre el peso y la talla que se utiliza frecuentemente para identificar el sobrepeso y la obesidad en los adultos, tanto a nivel individual como poblacional.</p>
+<center><img src="10-19.jpg"></center>
+<form>
+  <table align="center" border=1 border-collapse: collapse; bordercolor="000000" width="50%">
+    <tr>
+      <td colspan="2" align="center"style="background-color: #000000;">
+        <span style="font-size: 60px; line-height: 1.5;color: #B91478;">Sistema Métrico</span></td>
+    </tr>
+    <tr>
+      <td align="left">Peso (kg) <input type="text" style="background-color: #FFFFFF"id="peso"></td>
+      <td align="center">Estatura (m) <input type="text" style="background-color: #FFFFFF"id="estatura"></td>  
+    </tr>
+    <tr>
+      <td align="right"><input type="button" style="background-color: #FFFFFF" value="Resultado" onclick="dividir()"></td>
+      <td align="left"><input type="text" style="background-color: #FFFFFF" id="resultado"disabled></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"style="background-color: #F1C40F">Fórmula: peso (kg) / [estatura (m)]2</td>
+    </tr>
+  </table>
+</form>
+<script>
+  function dividir(){
+    var numero1 = Number(document.getElementById("peso").value);
+    var numero2 = Number(document.getElementById("estatura").value);
+    var dividir = numero1 / (numero2*numero2);document.getElementById("resultado").value =dividir;
+  }
+</script>
+<p><A HREF="https://www.gob.mx/salud/articulos/cartillas-nacionales-de-salud-12270">CARTILLAS NACIONALES DE SALUD</A></p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Mi documento básico</title>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<body>
+<marquee behavior="alternate" direction="">
+  <img src="mv.png"></marquee>
+  <center>Distancia entre dos puntos</center>
+  La distancia entre dos puntos es igual a la longitud del segmento que los une.
+  Calcular los cuadrados de las diferencias entre sus coordenadas y luego hallar la raíz de la suma de dichos cuadrados.
+  <center><img src="dp.png"width="500" height="200"></center>
+<form>
+  <table align="center" border=1 border-collapse: collapse; bordercolor="000000" width="50%">
+    <tr>
+      <td colspan="3" align="center"style="background-color: #000000;">
+        <span style="font-size: 60px; line-height: 1.5;color: #B91478;">Distancia</span></td></tr>
+        <tr>
+          <td>Coordenadas del primer punto:</td>
+          <td>Coordenadas del segundo punto:</td>
+        </tr>
+        <tr>
+          <td align="center">
+              <input type="text" style="background-color: #FFFFFF"id="punto1x" placeholder="A(x&#8321)">
+          </td>
+          <td align="center">
+            <input type="text" style="background-color: #FFFFFF"id="punto2x" placeholder="B(x&#8322)">
+          </td> 
+        </tr>
+        <tr>
+          <td align="center">
+              <input type="text" style="background-color: #FFFFFF"id="punto1y" placeholder="A(y&#8321)">
+          </td>
+          <td align="center">
+            <input type="text" style="background-color: #FFFFFF"id="punto2y" placeholder="B(y&#8322)">
+          </td> 
+        </tr>
+        <tr>
+          <td align="left"><input type="button" style="background-color: #FFFFFF" value="Resultado:" onclick="Coordenadas()"></td>
+          <td align="center"><input type="text" id="resultado" disabled></td>
+        </tr>
+      </table>
+      </form>
+      <script>
+        function Coordenadas(){
+        var numero1 = Number(document.getElementById("punto1x").value);
+        var numero2 = Number(document.getElementById("punto2x").value);
+        var numero3 = Number(document.getElementById("punto1y").value);
+        var numero4 = Number(document.getElementById("punto2y").value);
+        //var raiz = Math.sqrt((numero2 - numero1)*(numero2 - numero1))+((numero4 - numero3)*(numero4 - numero3));
+        var raiz2 = Math.sqrt(Math.pow((numero2 - numero1),2)+Math.pow((numero4 - numero3),2));
+        document.getElementById("resultado").value = raiz2;
+}
+</script>
+</body>
+</html>

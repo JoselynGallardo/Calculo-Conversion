@@ -1,0 +1,36 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Mi documento básico</title>
+</head>
+<body>
+  <marquee behavior="alternate" direction="right">
+    <img src="m.png"></marquee>
+  Millas: De acuerdo al uso y a la región, adquiere diferentes valores. Por lo habitual es empleada en países anglosajones que equivale a 1609 metros.
+    Milla romana: Equivalía a 1000 pasos o a 1481 metros.
+    <br>Metros:1 metro equivale a 0,00062137 millas.Es la distancia recorrida por la luz en el vacío durante un intervalo de tiempo de 1/299 792 458 de segundo</br>
+<form>
+	<table align="center" border="1" border-collapse: collapse; bordercolor="000000" width="50%">
+		<tr>
+			<td colspan="3" align="center"style="background-color: #000000;">
+				<span style="font-size: 60px; line-height: 1.5;color: #B91478;">Longitud</span></td></tr>
+				<tr>
+					<td ><input type="text" style="background-color: #FFFFFF"id="millas"placeholder="1"></td>
+          <td align="center"><input type="button" style="background-color: #FFFFFF" value="=" onclick="Longitud()"></td>
+          <td ><input type="text" style="background-color: #FFFFFF"id="metros"placeholder="1609.34"></td>
+        </tr>
+        <tr>
+          <td>Millas</td> 
+          <td></td>
+          <td>Metros</td> 
+        </tr>
+      </table>
+    </form>
+    <script>
+      function Longitud(){
+        var numero1 = Number(document.getElementById("millas").value);
+        var m = numero1 * 1609.34;document.getElementById("metros").value =m;
+      }
+    </script>
+</body>
+</html>

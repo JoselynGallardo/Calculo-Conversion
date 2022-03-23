@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Mi documento básico</title>
+</head>
+<body>
+  <marquee behavior="alternate" direction="">
+    <img src="cf.png"></marquee>
+  <p>Equivalente en intensidad calórica a la escala de los grados kelvin 
+por lo que puede definirse con la siguiente fórmula:Temperatura (°C) = Temperatura (K) – 273,15</p>
+  <center><IMG SRC="Anders_Celsius.jpg"width="300" height="300"></center>
+  <center><p>Físico y astrónomo sueco Anders Celsius</p></center>
+  <p>La escala divide la diferencia entre los puntos de fusión y de ebullición del agua en 180 intervalos iguales y establece como las temperaturas de congelación y ebullición del agua, 32 °F y 212 °F.</p>
+  <p>Una diferencia de 1,8 grados Fahrenheit equivale a la de 1 grado centígrado.</p>
+  <center><IMG SRC="fahrenheit.jpg"width="300" height="300"></center>
+  <center><p>Físico polaco Daniel Gabriel Fahrenheit en 1724.</p></center>
+
+<form>
+	<table align="center" border-collapse: collapse; bordercolor="000000" width="50%">
+		<tr>
+			<td colspan="3" align="center"style="background-color: #000000;">
+				<span style="font-size: 60px; line-height: 1.5;color: #B91478;">Unidad de Temperatura</span></td></tr>
+				<tr>
+          <td align="right"><input type="text" style="background-color: #FFFFFF"id="c" placeholder="0"></td>
+          <td align="center"><input type="button" style="background-color: #FFFFFF" value="=" onclick="gf()"></td>
+          <td><input type="text" style="background-color: #FFFFFF"id="f"placeholder="32"disabled></td>
+        </tr>
+        <tr>
+          <td align="right">Grado Celsius</td>
+          <td></td>
+          <td>Grado Fahrenheit</td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center"style="background-color: #F1C40F">Fórmula: (0 °C × 9/5) + 32 = 32 °F</td>
+        </tr>
+      </table>
+      </form>
+      <script>
+        function gf(){
+        var numero1 = Number(document.getElementById("c").value);
+        var cf = (numero1 * 9/5)+32;document.getElementById("f").value=cf;
+      }
+    </script>
+</body>
+</html>
